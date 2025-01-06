@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --bg-color: #f9fbfd;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+nav {
+    background-color: #121212;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.company-logo h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.nav-links ul {
+    gap: 16px;
+}
+
+.hover-link {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    transition: color 0.3s ease;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.nav-item.active {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.search-bar {
+    height: 36px;
+    gap: 8px;
+}
+
+.news-input {
+    width: 250px;
+    height: 100%;
+    padding: 0 12px;
+    border-radius: 6px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+main {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: flex-start;
+}
+
+.card {
+    width: 340px;
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.news-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+.news-source {
+    margin: 12px 0;
+    font-size: 0.9rem;
+    color: var(--secondary-text-color);
+}
+
+.news-desc {
+    font-size: 0.95rem;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #00b4d8;
+    --accent-color: #673de5;
+    --accent-color-dark: #673de5;
+    --bg-color: #121212;
+    --positive-color: #4caf50;
+    --neutral-color: #ff9800;
+    --negative-color: #f44336;
+}
+
+/* Previous CSS remains the same until card-content */
+
+.card-content {
+    padding: 16px;
+    position: relative;
+}
+
+.sentiment-indicator {
+    position: absolute;
+    top: -20px;
+    right: 16px;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sentiment-icon {
+    font-size: 1rem;
+}
+
+.sentiment-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Sentiment colors */
+.sentiment-positive {
+    color: var(--positive-color);
+}
+
+.sentiment-neutral {
+    color: var(--neutral-color);
+}
+
+.sentiment-negative {
+    color: var(--negative-color);
+}
